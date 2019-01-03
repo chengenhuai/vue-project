@@ -1,0 +1,241 @@
+#app {
+    width: 100%;
+    &>div {
+        width: 100%;
+        height: 100%;
+        overflow-X: hidden;
+        .header {
+            width: 100%;
+            height: 0.9rem;
+            background: #faa716;
+            line-height: 0.9rem;
+            span {
+                margin-left: 0.2rem;
+                font-size: 0.4rem;
+                color: #fff;
+                font-weight: 100;
+            }
+        }
+        .banner {
+            width: 100%;
+            height: 2.5rem;
+            position: relative;
+            ul {
+                width: 500%;
+                display: flex;
+                height: 2.5rem;
+                li {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                        height: 2.5rem;
+                    }
+                }
+            }
+            .pagination {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 0.45rem;
+                line-height: 0.45rem;
+                background: rgba(0, 0, 0, .4);
+                div {
+                    width: 3rem;
+                    height: 0.45rem;
+                    text-align: center;
+                    left: 50%;
+                    margin-left: -1.5rem;
+                    span {
+                        display: inline-block;
+                        width: 0.25rem;
+                        height: 0.25rem;
+                        border-radius: 50%;
+                        margin-left: 0.1rem;
+                        background: blue;
+                    }
+                }
+                .swiper-pagination-bullet-active {
+                    background: #fff;
+                }
+            }
+        }
+        .search {
+            width: 100%;
+            height: 1rem;
+            line-height: 1rem;
+            display: flex;
+            justify-content: space-between;
+            background: #f2f2f2;
+            span {
+                text-align: center;
+                &:nth-of-type(1) {
+                    flex: 2;
+                    font-size: 0.2rem;
+                    i {
+                        margin-left: 0.1rem;
+                        font-size: 0.14rem;
+                    }
+                }
+                &:nth-of-type(2) {
+                    flex: 7.5;
+                    position: relative;
+                    input {
+                        width: 80%;
+                        height: 0.5rem;
+                        padding-left: 0.5rem;
+                        border: 1px solid #ccc;
+                        border-radius: 0.1rem;
+                    }
+                    i {
+                        position: absolute;
+                        left: 0.35rem;
+                        color: #d9d9d9;
+                        top: 0.05rem;
+                    }
+                }
+                &:nth-of-type(3) {
+                    flex: 1.5;
+                    i {
+                        font-size: 0.4rem;
+                        color: #9c9c9c;
+                    }
+                }
+            }
+        }
+        .picture {
+            width: 100%;
+            ul {
+                width: 100%;
+                li {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-bottom: 1px solid #ccc;
+                    p {
+                        text-align: center;
+                        line-height: 1.8rem;
+                        i {
+                            margin-left: 0.1rem;
+                            font-size: 0.15rem;
+                        }
+                    }
+                    dl {
+                        flex: 1;
+                        height: 1.8rem;
+                        border-right: 1px solid #ccc;
+                        dt {
+                            width: 1rem;
+                            height: 1rem;
+                            margin: 0 auto;
+                            margin-top: 0.1rem;
+                            text-align: center;
+                            line-height: 1rem;
+                            i {
+                                font-size: 0.6rem;
+                                color: orange;
+                            }
+                        }
+                        dd {
+                            margin-top: 0.1rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .hot_section {
+            width: 100%;
+            h3 {
+                width: 100%;
+                height: 0.8rem;
+                line-height: 0.8rem;
+                font-weight: normal;
+                font-size: 0.3rem;
+                span {
+                    margin-left: 0.2rem;
+                }
+            }
+            ul {
+                width: 100%;
+                li {
+                    width: 100%;
+                    padding-bottom: 0.2rem;
+                    border-bottom: 1px solid #ccc;
+                    dl {
+                        width: 90%;
+                        margin-left: 0.2rem;
+                        display: flex;
+                        margin-top: 0.2rem;
+                        dt {
+                            width: 1.8rem;
+                            height: 2.4rem;
+                            img {
+                                width: 1.8rem;
+                                height: 2.4rem;
+                            }
+                        }
+                        dd {
+                            flex: 1;
+                            margin-left: 0.3rem;
+                            p {
+                                line-height: 0.4rem;
+                                &:nth-of-type(1) {
+                                    font-size: 0.3rem;
+                                    width: 90%;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis; //文本溢出显示省略号
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 2;
+                                    -webkit-box-orient: vertical;
+                                    span {
+                                        font-size: 0.2rem;
+                                        padding: 0 0.1rem;
+                                        background: #3ed086;
+                                        color: #fff;
+                                        margin-left: 0.1rem;
+                                    }
+                                }
+                                &:nth-of-type(2) {
+                                    line-height: 0.5rem;
+                                    font-size: 0.3rem;
+                                    color: #808080;
+                                    width: 90%;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis; //文本溢出显示省略号
+                                    white-space: nowrap; //文本不会换行（单行文本溢出）
+                                    i {
+                                        margin-right: 0.1rem;
+                                        font-size: 0.1rem;
+                                    }
+                                }
+                                &:nth-of-type(3) {
+                                    line-height: 0.5rem;
+                                    font-size: 0.3rem;
+                                    color: #808080;
+                                    width: 90%;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis; //文本溢出显示省略号
+                                    white-space: nowrap; //文本不会换行（单行文本溢出）
+                                    i {
+                                        margin-right: 0.1rem;
+                                        font-size: 0.1rem;
+                                    }
+                                }
+                                &:nth-of-type(4) {
+                                    line-height: 0.6rem;
+                                    color: #808080;
+                                    span {
+                                        color: red;
+                                        font-size: 0.3rem;
+                                        margin-right: 0.05rem
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
